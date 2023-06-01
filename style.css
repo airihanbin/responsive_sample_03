@@ -83,10 +83,16 @@ footer {
 
 .main-menu {
   height: 0;
+  width: 100%;
+  transition: height .5s;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .8);
 }
 
 #navBtn:checked ~ .main-menu {
-  height: auto;
+  height: 100vh;
 }
 
 #navBtn {
